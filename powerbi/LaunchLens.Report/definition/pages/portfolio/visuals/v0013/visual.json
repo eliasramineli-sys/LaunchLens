@@ -1,0 +1,254 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "v0013",
+  "position": {
+    "x": 24,
+    "y": 582,
+    "width": 1392,
+    "height": 258,
+    "z": 13,
+    "tabOrder": 13
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ranking dos candidatos | probabilidade, custo e decisão'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#102039'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Candidatos"
+                    }
+                  },
+                  "Property": "ranking"
+                }
+              },
+              "queryRef": "Candidatos.ranking"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Candidatos"
+                    }
+                  },
+                  "Property": "app_id"
+                }
+              },
+              "queryRef": "Candidatos.app_id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Candidatos"
+                    }
+                  },
+                  "Property": "categoria"
+                }
+              },
+              "queryRef": "Candidatos.categoria"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Candidatos"
+                    }
+                  },
+                  "Property": "plataforma"
+                }
+              },
+              "queryRef": "Candidatos.plataforma"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Candidatos"
+                    }
+                  },
+                  "Property": "prob_sucesso"
+                }
+              },
+              "queryRef": "Candidatos.prob_sucesso"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Candidatos"
+                    }
+                  },
+                  "Property": "recomendacao"
+                }
+              },
+              "queryRef": "Candidatos.recomendacao"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Candidatos"
+                    }
+                  },
+                  "Property": "custo_desenvolvimento"
+                }
+              },
+              "queryRef": "Candidatos.custo_desenvolvimento"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Candidatos"
+                    }
+                  },
+                  "Property": "limiar_adiar"
+                }
+              },
+              "queryRef": "Candidatos.limiar_adiar"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Candidatos"
+                    }
+                  },
+                  "Property": "limiar_lancar"
+                }
+              },
+              "queryRef": "Candidatos.limiar_lancar"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Candidatos"
+                  }
+                },
+                "Property": "ranking"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    }
+  }
+}

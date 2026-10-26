@@ -1,0 +1,10 @@
+{
+  "data/processed/avaliacao_teste.csv": "6fc8b8d90b7cc94c0a8e7908bdbf91d8e22d1fbf0489599114e6f802fc0b0b54",
+  "data/processed/candidatos_pontuados.csv": "2aa6e55552e64f673ef4910a6b03344e9e606239c44314bfdcaaf6f9c83dd492",
+  "data/processed/importancia_variaveis.csv": "4c522103d38447fbef1793891f6dc183d341bc94fb3ee07986a9178ebf433138",
+  "data/processed/metricas_modelos.csv": "ac67df0e866175bb1fe7b9e06c0f878e791c8b6bf0eecd93bb9485e63ecf2ef5",
+  "data/processed/particoes.csv": "16f53efa12ea01d8f7088c6a92e87225dbf1d276b7462b5ad8480bb7cdab407a",
+  "data/processed/sensibilidade_limiar.csv": "e7bcc7980a202f622b950df09d80f4277ecc73ec73df0055be780fa941c0b557",
+  "data/raw/candidatos_apps.csv": "75e606f2a4fc73712c76ad79b90c7e6dd105dd4b4e7914936f9da5a39beafb5e",
+  "data/raw/historico_apps.csv": "14e02e8fee8ea24c39ce907dfdc84b67882d025991b45cdce03c871cce383dd3"
+}

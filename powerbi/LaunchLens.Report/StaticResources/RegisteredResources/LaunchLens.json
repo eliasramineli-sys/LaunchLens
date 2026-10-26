@@ -1,0 +1,13 @@
+{
+  "name": "LaunchLens",
+  "dataColors": [
+    "#2563EB",
+    "#0D9488",
+    "#E9A23B",
+    "#D65A6F",
+    "#8B5CF6"
+  ],
+  "background": "#F4F7FB",
+  "foreground": "#102039",
+  "tableAccent": "#2563EB"
+}

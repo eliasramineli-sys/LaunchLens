@@ -1,0 +1,50 @@
+-- Tabela: Candidatos
+[Total candidatos] = COUNTROWS(Candidatos)
+
+-- Tabela: Candidatos
+[Probabilidade media] = AVERAGE(Candidatos[prob_sucesso])
+
+-- Tabela: Candidatos
+[Lancar] = CALCULATE(COUNTROWS(Candidatos), Candidatos[recomendacao] = "Lancar")
+
+-- Tabela: Candidatos
+[Validar mais] = CALCULATE(COUNTROWS(Candidatos), Candidatos[recomendacao] = "Validar mais")
+
+-- Tabela: Candidatos
+[Adiar] = CALCULATE(COUNTROWS(Candidatos), Candidatos[recomendacao] = "Adiar")
+
+-- Tabela: Candidatos
+[Capital desenvolvimento] = SUM(Candidatos[custo_desenvolvimento])
+
+-- Tabela: Avaliacao
+[Total teste] = COUNTROWS(Avaliacao)
+
+-- Tabela: Avaliacao
+[Falsos positivos] = SUM(Avaliacao[fp])
+
+-- Tabela: Avaliacao
+[Falsos negativos] = SUM(Avaliacao[fn])
+
+-- Tabela: Avaliacao
+[Precisao] = DIVIDE(SUM(Avaliacao[tp]), SUM(Avaliacao[tp]) + SUM(Avaliacao[fp]))
+
+-- Tabela: Avaliacao
+[Recall] = DIVIDE(SUM(Avaliacao[tp]), SUM(Avaliacao[tp]) + SUM(Avaliacao[fn]))
+
+-- Tabela: Avaliacao
+[Brier filtrado] = AVERAGE(Avaliacao[erro_brier])
+
+-- Tabela: Avaliacao
+[Taxa sucesso real] = AVERAGE(Avaliacao[sucesso_12m])
+
+-- Tabela: Metricas
+[ROC AUC teste] = CALCULATE(MAX(Metricas[roc_auc]), Metricas[conjunto] = "teste")
+
+-- Tabela: Metricas
+[Brier comparacao] = MIN(Metricas[brier])
+
+-- Tabela: Importancia
+[Queda AUC] = SUM(Importancia[importancia_auc])
+
+-- Tabela: Limiar
+[Custo relativo] = MIN(Limiar[custo_relativo])
