@@ -1,0 +1,15 @@
+LaunchLens: ciência de dados aplicada à decisão de lançamento de aplicativos.
+
+Disponibilizei a versão {release_tag} do projeto, que reúne Python, Machine Learning, Jupyter Notebook e Power BI.
+
+O estudo utiliza 5.000 aplicativos históricos fictícios e 60 candidatos para estimar a probabilidade de sucesso comercial e apoiar três decisões: lançar, validar mais ou adiar.
+
+Incluí comparação de modelos, avaliação temporal com maturação dos resultados, análise de erros, explicabilidade e documentação reproduzível.
+
+Os dados são sintéticos: este é um estudo de portfólio, sem validação de viabilidade no mercado real.
+
+Código e documentação:
+{repository_url}
+
+Detalhes desta versão:
+{release_url}

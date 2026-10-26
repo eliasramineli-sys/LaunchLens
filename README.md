@@ -151,6 +151,20 @@ O notebook importa as mesmas funções da CLI, evitando duas implementações di
 A licença de distribuição não foi escolhida: **não foi adicionada uma licença por conta própria**.
 Repositório: https://github.com/eliasramineli-sys/LaunchLens
 
+## Integração GitHub → LinkedIn
+
+Releases estáveis podem gerar um post público com texto e links no LinkedIn.
+A integração começa em modo de prévia: não publica até você autorizar sua conta,
+configurar o Secret e ativar `LINKEDIN_ENABLED=true`.
+
+- [Guia de ativação no Windows](docs/integracao_linkedin.md)
+- [Texto da publicação para revisão](social/linkedin_post.txt)
+- Workflow: `.github/workflows/linkedin-release.yml`
+- Assistente local: `py -3.12 scripts/configure_linkedin.py`
+
+Não exige API de IA ou servidor contratado. Tokens expiram e precisam de renovação.
+O envio autenticado ainda depende da configuração da conta do usuário.
+
 ## Referências técnicas
 
 - [Power BI Projects — Microsoft](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview)
